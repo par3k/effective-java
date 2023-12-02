@@ -1,4 +1,4 @@
-package cpt1.buildPattern;
+package cpt1.아이템2빌드패턴;
 
 public class CalzonePizza extends Pizza {
     private final boolean sauceInside;
