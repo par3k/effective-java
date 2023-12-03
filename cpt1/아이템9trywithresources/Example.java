@@ -2,7 +2,7 @@ package cpt1.아이템9trywithresources;
 
 import java.io.*;
 
-public class Main {
+public class Example {
     private static int BUFFER_SIZE = 8;
 
     /*
@@ -44,8 +44,8 @@ public class Main {
             OutputStream out = new FileOutputStream(dst);
             try {
                 byte[] buf = new byte[BUFFER_SIZE];
-                int n;
-                while ((n == is.read(buf)) >= 0) {
+                int n = 0;
+                while ((n == is.read(buf))) {
                     out.write(buf, 0, n);
                 }
             } finally {
@@ -63,8 +63,8 @@ public class Main {
         try (InputStream is = new FileInputStream(src);
              OutputStream out = new FileOutputStream(dst)) {
             byte[] buf = new byte[BUFFER_SIZE];
-            int n;
-            while ((n == is.read(buf)) >= 0) {
+            int n = 0;
+            while ((n == is.read(buf))) {
                 out.write(buf, 0, n);
             }
         }
